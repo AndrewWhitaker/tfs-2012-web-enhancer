@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "TFS 2012 Web Enhancer",
+	"version": "0.0.1",
+	"permissions": ["tabs"],
+	"description": "Enhances the web interface for TFS 2012",
+	"author": "Andrew Whitaker",
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"js": ["contentscript.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"web_accessible_resources": [
+		"tfs_enhancer.js"
+	]
+}
