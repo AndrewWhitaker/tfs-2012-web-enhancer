@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TFS 2012 Web Enhancer",
 	"version": "0.0.1",
-	"permissions": ["tabs"],
+	"permissions": ["tabs", "storage"],
 	"description": "Enhances the web interface for TFS 2012",
 	"author": "Andrew Whitaker",
 	"background": {
@@ -17,5 +17,6 @@
 	],
 	"web_accessible_resources": [
 		"tfs_enhancer.js"
-	]
+	],
+	"options_page": "options/options.html"
 }
